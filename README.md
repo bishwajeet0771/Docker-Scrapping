@@ -30,3 +30,6 @@ A multi-stage Docker application that scrapes a webpage using Puppeteer (Node.js
 
 4. Docker Multi-Stage Build:
    - Keeps final image minimal by excluding Chromium/Puppeteer from the runtime.
+## Example Test (Real URL)
+Say you want to scrape https://www.bbc.com 
+
