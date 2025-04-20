@@ -12,3 +12,21 @@ A multi-stage Docker application that scrapes a webpage using Puppeteer (Node.js
 - Easy to configure with environment variables.
 
 ---
+
+## How It Works
+1. You provide a URL (via an environment variable at build time).
+
+2. Node.js with Puppeteer:
+   - Launches a headless Chromium browser.
+   - Navigates to the given URL.
+   - Extracts:
+     - The <title> of the page.
+     - The first <h1> element (if available).
+     - Saves this info to scraped_data.json.
+
+3. Python Flask App:
+   - Reads that JSON file.
+   - Serves it at http://localhost:5000/ as JSON over HTTP.
+
+4. Docker Multi-Stage Build:
+   - Keeps final image minimal by excluding Chromium/Puppeteer from the runtime.
