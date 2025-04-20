@@ -33,3 +33,8 @@ A multi-stage Docker application that scrapes a webpage using Puppeteer (Node.js
 ## Example Test (Real URL)
 Say you want to scrape https://www.bbc.com 
 
+## Build the Image
+
+```bash
+docker build --build-arg SCRAPE_URL=https://www.bbc.com -t web-scraper-app .
+```
