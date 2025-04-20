@@ -38,3 +38,10 @@ Say you want to scrape https://www.bbc.com
 ```bash
 docker build --build-arg SCRAPE_URL=https://www.bbc.com -t web-scraper-app .
 ```
+## To view the images
+
+```bash
+docker images
+```
+
+![Screenshot (4)](https://github.com/user-attachments/assets/9f15db0b-f9db-412c-8b64-ee433799606e)
