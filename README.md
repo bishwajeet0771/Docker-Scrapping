@@ -45,3 +45,12 @@ docker images
 ```
 
 ![Screenshot (4)](https://github.com/user-attachments/assets/9f15db0b-f9db-412c-8b64-ee433799606e)
+
+
+## Run the Container
+
+```bash
+docker run -p 5000:5000 web-scraper-app
+```
+
+![Screenshot (5)](https://github.com/user-attachments/assets/3f30e635-ed8e-4109-b3dd-25b35c1986bf)
